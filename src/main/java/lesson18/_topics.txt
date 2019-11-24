@@ -9,7 +9,3 @@
 - keys
 - prepared statements
 - result set
-
----
-- maven
-- running from command line

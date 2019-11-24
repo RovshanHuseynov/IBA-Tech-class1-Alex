@@ -1,5 +1,8 @@
 - warm up
 
+- update
+- delete
+- join
 - nested queries
 - subqueries
 - constraints
@@ -7,3 +10,7 @@
 - indices
 - transactions
 - transactions isolation levels
+
+---
+- maven
+- running from command line
