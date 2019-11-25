@@ -1,6 +1,7 @@
 - warm up
 
 - SQL idea
+- JDBC
 - db connection
 - table creating
 - insertion data to table

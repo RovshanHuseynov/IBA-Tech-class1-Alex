@@ -6,8 +6,3 @@
 
 - servlet to handle file content
 - freemarker
-
----
-
-- maven
-- running from command line
