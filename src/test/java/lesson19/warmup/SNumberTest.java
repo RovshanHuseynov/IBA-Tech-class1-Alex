@@ -26,6 +26,11 @@ public class SNumberTest {
 
   @Test
   public void add3() {
+    assertEquals("111", c.add("109", "2"));
+  }
+
+  @Test
+  public void add4() {
     assertEquals("1001", c.add("999", "2"));
   }
 }
