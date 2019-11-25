@@ -8,6 +8,14 @@ public class SNumber {
     return s.charAt(index) - '0';
   }
 
+  private int carry(int num) {
+    return num > 9 ? 1 : 0;
+  }
+
+  private int aligned(int num) {
+    return num > 9 ? num - 10 : num;
+  }
+
   public String add(String v1, String v2) {
     LinkedList<Integer> digits = new LinkedList<>();
     int idx1 = v1.length() - 1;
@@ -15,20 +23,20 @@ public class SNumber {
     int carry = 0;
     while (idx1>=0 && idx2>=0) {
       int d = digitAt(v1, idx1--) + digitAt(v2, idx2--) + carry;
-      carry = d / 10;
-      d = d % 10;
+      carry = carry(d);
+      d = aligned(d);
       digits.addFirst(d);
     }
     while (idx1>=0) {
       int d = digitAt(v1, idx1--) + carry;
-      carry = d / 10;
-      d = d % 10;
+      carry = carry(d);
+      d = aligned(d);
       digits.addFirst(d);
     }
     while (idx2>=0) {
       int d = digitAt(v2, idx2--) + carry;
-      carry = d / 10;
-      d = d % 10;
+      carry = carry(d);
+      d = aligned(d);
       digits.addFirst(d);
     }
     if (carry != 0) digits.addFirst(1);
