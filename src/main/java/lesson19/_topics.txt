@@ -1,16 +1,32 @@
 - warm up
 
-- update
-- delete
-- join
-- nested queries
-- subqueries
-- constraints
-- triggers
-- indices
-- transactions
-- transactions isolation levels
-
----
-- maven
-- running from command line
+- SQL vs NoSQL
+- ACID
+  - Atomicity
+  - Consistency
+  - Isolation
+  - Durability
++ update
++ delete
++ join
++ nested queries
++ subqueries
++ triggers
++ stored procedures
+- functions
++ index/indexes/indices
++ auto_increment, sequences
++ constraints (pk, fk, null, not null)
++ fk update/delete rule
+  - no action
+  - restrict
+  - set default
+  - set null
+  - cascade
++ transactions
++ transactions isolation levels:
+  - Read uncommited / Drirty read (PostgreSQL - not implemented)
+  - Read committed (PostgreSQL - default)
+  - Repeatable read
+  - serialized
+  https://habr.com/ru/post/317884/

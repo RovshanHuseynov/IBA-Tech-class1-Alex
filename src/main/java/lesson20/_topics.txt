@@ -3,3 +3,7 @@
 - Servlet Filters
 - Cookies
 - JSON (Jackson)
+
+---
+- maven
+- running from command line
