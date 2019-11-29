@@ -12,7 +12,6 @@ public class ParFilter implements Filter {
     if (Check.check_data(request)) {
       chain.doFilter(request, response);
     }
-
   }
 
   @Override

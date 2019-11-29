@@ -17,5 +17,6 @@ https://github.com/alexr007/java-io.git
 https://github.com/alexr007/algorithms.git
 https://github.com/alexr007/java-web.git
 https://github.com/alexr007/snake-clean.git
+https://github.com/alexr007/dantests.git
 
 P.S. Put stars, follow me, and feel free to fork and do experiments by yourself ! :)
