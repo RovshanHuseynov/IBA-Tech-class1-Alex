@@ -13,14 +13,18 @@ public class ServletNastyDesign extends HttpServlet {
    * BEFOREHAND real operation
    */
   @Override
-  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-    // TODO: make it nasty
-    if (Check.check_data(req)) {
-      int x = Integer.parseInt(req.getParameter("x"));
-      int y = Integer.parseInt(req.getParameter("y"));
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    try {
+      String xs = request.getParameter("x");
+      String ys = request.getParameter("y");
+      int x = Integer.parseInt(xs);
+      int y = Integer.parseInt(ys);
+      // extra checks, extra if...
+      PrintWriter w = response.getWriter();
       int z = x + y;
-      PrintWriter w = resp.getWriter();
       w.println(z);
+    } catch (NumberFormatException ex) {
+      response.getWriter().println("smt went wrong");
     }
   }
 }

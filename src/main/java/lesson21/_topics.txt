@@ -2,6 +2,3 @@
 
 - Servlet Filters
 - JSON (Jackson)
-
-- maven
-- running from command line

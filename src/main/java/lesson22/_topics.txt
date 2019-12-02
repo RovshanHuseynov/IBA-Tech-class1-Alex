@@ -1,0 +1,6 @@
+- warm up
+
+- step project
+- logger
+- maven
+- running from command line
