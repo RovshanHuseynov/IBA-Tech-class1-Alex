@@ -8,4 +8,4 @@ int[][] origin = {{1,6,3}, {}, {5,4}, {7,8,2,9}, {}};
 3. find the maximum element
 4. calculate the number of elements
 5. calculate the average of all elements
-6. calculate the total amount of all elements
+6. calculate the total sum of all elements
