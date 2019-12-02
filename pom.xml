@@ -8,14 +8,6 @@
     <groupId>org.danit</groupId>
     <version>1.0-SNAPSHOT</version>
 
-    <!--  snake section -->
-    <repositories>
-        <repository>
-            <id>codenjoy-releases</id>
-            <url>https://github.com/codenjoyme/codenjoy-repo/raw/master/snapshots</url>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
             <plugin>
@@ -79,12 +71,26 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.28</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>log4j-over-slf4j</artifactId>
+            <artifactId>slf4j-api</artifactId>
             <version>1.7.29</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-nop -->
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-nop</artifactId>-->
+<!--            <version>1.7.29</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.29</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -108,15 +114,6 @@
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
             <version>2.10.1</version>
-        </dependency>
-
-
-
-        <!--  snake section -->
-        <dependency>
-            <groupId>com.codenjoy</groupId>
-            <artifactId>engine</artifactId>
-            <version>1.0.28</version>
         </dependency>
     </dependencies>
 </project>

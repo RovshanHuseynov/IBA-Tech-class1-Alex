@@ -57,6 +57,10 @@ public final class TemplateEngine {
             config.getTemplate(templateFile).process(data, resp.getWriter());
         } catch (TemplateException e) {
             LOG.info(e.getMessage());
+            LOG.warn("....");
+            LOG.error("....");
+            LOG.trace("....");
+            LOG.debug("....");
         }
     }
 }
