@@ -1,5 +1,6 @@
 You've been given an integer nested array with random values
-int[][] origin = {{1,6,3}, {5,4}, {7,8,2,9}, {}};
+like that:
+int[][] origin = {{1,6,3}, {}, {5,4}, {7,8,2,9}, {}};
 
 1. print it in a sorted way on one line
    without nested structures
