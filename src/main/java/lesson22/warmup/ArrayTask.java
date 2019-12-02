@@ -13,12 +13,13 @@ public class ArrayTask {
   }
 
   public static void main(String[] args) {
-    IntStream data = Stream.of(data())  // Stream<int[]>
-        .flatMap((int[] ints) -> Arrays.stream(ints).boxed())
-        .mapToInt(x -> x)
-        .sorted();
+    Stream<int[]> step1 = Arrays.stream(data());
+    Stream<Integer> step2 = step1
+        .flatMap((int[] ints) -> Arrays.stream(ints).boxed());
+    //.sorted();
+    IntStream step3 = step2.mapToInt(x -> x);
 
-    IntSummaryStatistics st = data.summaryStatistics();
+    IntSummaryStatistics st = step3.summaryStatistics();
     st.getMax();
     st.getMin();
     st.getCount();
