@@ -1,7 +1,12 @@
 package lesson09.dao;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class DAOPizzaHashMap implements DAO<Pizza> {
 
@@ -15,6 +20,11 @@ public class DAOPizzaHashMap implements DAO<Pizza> {
   @Override
   public Pizza get(int id) {
     return storage.get(id);
+  }
+
+  @Override
+  public List<Pizza> get(Predicate<Pizza> p) {
+    return storage.values().stream().filter(p).collect(Collectors.toList());
   }
 
   @Override
