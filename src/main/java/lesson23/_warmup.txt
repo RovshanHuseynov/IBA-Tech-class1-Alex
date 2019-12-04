@@ -1,0 +1,6 @@
+You've been given a random string
+get rid of all duplicated letters
+String filter(String origin) {...}
+abcdea -> abcde
+aaa -> a
+
