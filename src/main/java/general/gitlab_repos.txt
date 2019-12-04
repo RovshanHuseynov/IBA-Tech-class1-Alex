@@ -18,5 +18,6 @@ https://github.com/alexr007/snake-clean.git
 https://github.com/alexr007/dantests.git
 https://github.com/alexr007/java-heroku.git
 https://github.com/alexr007/springboot-minimal.git
+https://github.com/alexr007/java-reflection.git
 
 P.S. Put stars, follow me, and feel free to fork and do experiments by yourself ! :)
