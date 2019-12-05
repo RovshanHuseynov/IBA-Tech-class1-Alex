@@ -1,0 +1,7 @@
+- warm up
+
+- step project
+- reflection
+- dependency injection
+- inversion of control
+
