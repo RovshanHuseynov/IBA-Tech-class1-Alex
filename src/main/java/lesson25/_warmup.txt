@@ -1,0 +1,6 @@
+Generate 50 random numbers
+in the range [-25..25]
+put them into 3 different lists:
+1. negatives < -10
+2. positives > 10
+3. residual items
