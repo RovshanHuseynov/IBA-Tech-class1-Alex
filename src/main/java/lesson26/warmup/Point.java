@@ -1,5 +1,8 @@
 package lesson26.warmup;
 
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 public class Point {
   public final int x;
   public final int y;
