@@ -1,0 +1,11 @@
+Rectangles.
+you've been given a random number of rectangles
+all of them located horizontally
+so, each rectangle represented by two points
+a(x1,y1) and b(x2,y2)
+they can intersect between each other
+they can be nested into each other
+they can be separated between each other
+Task:
+to calculate TOTAL area occupied by rectangles
+without intersection duplications.
