@@ -13,4 +13,20 @@ public class Rectangle {
     this.p2 = p2;
   }
 
+  public int left() {
+    return Math.min(p1.x, p2.x);
+  }
+
+  public int right() {
+    return Math.max(p1.x, p2.x);
+  }
+
+  public int top() {
+    return Math.min(p1.y, p2.y);
+  }
+
+  public int down() {
+    return Math.max(p1.y, p2.y);
+  }
+
 }
